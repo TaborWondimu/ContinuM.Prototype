@@ -9,50 +9,84 @@
 </head>
 
 <body class="background-page">
+	<!-- Login Page -->
 <div class="sidenav">	
   <center><a href="#"><img src="images/MREN.Login.jpg" height="90" width="90" style="margin-top: 5em; margin-bottom: 5em;"></a></center>
-  <p>LOGIN*</p>	
+  <p>Login*</p>	
   <div id="fb-root"></div>
 		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=148766029155241&autoLogAppEvents=1"></script>
-	<div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-auto-logout-link="false" data-use-continue-as="false" style="margin-left: 2.5em;"></div>
+	<div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-auto-logout-link="false" data-use-continue-as="false" style="margin-left: 3em; margin-bottom: 1em;"></div>
+	<a href="#" class="googleSignIn"><img src="images/googleSignIn.png" height="45" width="238"></a>
   <p>- OR -</p>
   <a href="#" class="start">Sign Up</a>
+
+  <div class="downloadButtons">
+  	<p>Get the app</p>
+  	<a href="https://play.google.com/store/apps/details?id=com.continum.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" class="googlePlay" target="blank2"><img src="images/googlePlay.png" height="65" width="150"></a>
+  	<a href="https://apps.apple.com/us/app/continum/id1446920390?mt=8" class="appStore" target="blank3"><img src="images/appStore.png" height="65" width="150"></a>
+   </div>
+
 </div>
+	<!-- End of Login Page -->
 <!-- Logo HTML -->
 	<m-v-logo id="landingLogo">
 		<svg class="logo-ring">
-		<h1 class="Title">Continu</h1><h1 class="M">M</u></h1>
+		<a href="landingpage.html"><h1 class="Title">Continu</h1><h1 class="M">M</u></h1></a>
 		</svg>
 	</m-v-logo>
+
 <!-- End of Logo HTML-->
 <!-- Top content -->
 	<div class="top-content">
+		<ul class="links">
+		<a href="contactus.html"><p2>About Us</p2></a>
+		<p2>•</p2>
+		<p2><a href="#bottom">Contact</a></p2>
+	</ul>
 		<h2>Collaborate in one place</h2>
-		<p>Organize your tasks and chat with your friends.</p>
 		<center><a href="#" class="start">Get Started</a></center>
 		</div>
 <!-- End of Top-Content -->
 <!-- Organize, Chat, Share Content, & Manage Tasks -->
-  	<div class="middle-content">
-  		<h3>ORGANIZE</h3>
-  		<p2>Create workspaces for yourself, teams, and groups.</p2>
-  		<h3>CHAT</h3>
-  		<p2>Socialize in group or direct messages with video and screen sharing.</p2>
-  		<h3>SHARE CONTENT</h3>
-  		<p2>Post, tag, search, and discuss with your team.</p2>
-  		<h3>MANAGE TASKS</h3>
-  		<p2>Assign and track your progress, customize your workflow.</p2>
-  		</div> <!-- End of Row-Two -->
-  	</div>
+
+<div class="row">
+
+  <div class="column">
+    <h5>Organize</h5>
+    <center><video class="video3" autoplay="autoplay" loop="" muted="">
+        <source src="videos/Workspace 7 11.mp4">
+</video></center>
+    <p>Create workspaces for yourself, teams, and groups.</p>
+  </div>
+
+  <div class="column">
+    <h5>Communicate</h5>
+    <center><video class="video1" autoplay="autoplay" loop="" muted="">
+        <source src="videos/Chat 7 11 clicks.mp4">
+</video></center>
+    <p>Chat in group or direct messages with video and screen sharing.</p>
+  </div>
+
+  <div class="column">
+    <h5>Manage</h5>
+    <center><video class="video2" autoplay="autoplay" loop="" muted="">
+        <source src="videos/Tasks 7 11 click.mp4">
+</video></center>
+    <p>Assign and track your progress, customize your workflow.</p>
+  </div>
+</div>
+
   	<!-- End of Middle-Content -->
-  	<div class="bottom-content">
+  	<div class="bottom-content" id="bottom">
   		<hr>
 				<h4>FREE FOR INDIVIDUALS AND SMALL GROUPS</h4>
-				<a href="#" class="pricing">View Pricing</a>
+				<a href="#" class="start">View Pricing</a>
+				<br>
+				<br>
 				<ul class="contact">
-					<a href="#"><li>Technical Support : 1.858.367.5500</li></a>
-					<a href="#"><li>Private Policy</li></a>
-					<a href="#"><li><i class="fa fa-envelope"></i>Support@ContinuM.com</li></a>
+					<a href="#"><li>Technical Support: 1.858.367.5500</li></a>
+					<a href="#"><li>Privacy Policy</li></a>
+					<a href="#"><li><i class="fa fa-envelope"></i> Support@ContinuM.com</li></a>
 					<a href="#"><li>Terms of Service</li></a>
 				</ul>
   	</div>

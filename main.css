@@ -1,6 +1,10 @@
+html {
+	scroll-behavior: smooth;
+}
+
 .background-page {
 	font-family: Noto Sans;
-	background-color: #000000;
+	background-color: #FBFCFC;
 	color: white;
 	padding-left: 2em;
 	padding-right: 23em;
@@ -18,13 +22,14 @@
   right: 0em;
   text-align: center;
   font-family: Noto Sans;
+  color: white;
 }
 
 #landingLogo {
 	font-family: Noto Sans;
 	position: fixed;
-    top: 1em;
-    left: 1em;
+    top: 0.5em;
+    left: 8px;
     z-index: 998;
     font-size: 1em;
     width: 0%;
@@ -70,20 +75,20 @@ m-v-logo .logo-ring {
   text-decoration: none;
   font-size: 16px;
   color: #ffffff;
-  border-radius: 28px;
+  border-radius: 2rem;
   display: inline-block;
   line-height: 2em;
   padding: 0em 2em 0em 2em;
   background-color: #5aa4c9;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .start:hover {
-	background-color: white;
 	color: black;
 	transition-duration: 0.5s;
 }
 
-.pricing {
+.login {
   text-decoration: none;
   font-size: 16px;
   color: #ffffff;
@@ -92,14 +97,16 @@ m-v-logo .logo-ring {
   line-height: 2em;
   padding: 0em 2em 0em 2em;
   background-color: #5aa4c9;
-  margin-top: 2em;
-  margin-bottom: 2em;
 }
 
-.pricing:hover {
+.login:hover {
 	background-color: white;
-	color: black;
+	color: white;
 	transition-duration: 0.5s;
+}
+
+.downloadButtons {
+	margin-top: 10em;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -109,8 +116,7 @@ m-v-logo .logo-ring {
 }
 
 .top-content {
-	font-weight: bold;
-	text-align: center;
+	text-align: right;
 }
 
 .Title {
@@ -120,7 +126,7 @@ m-v-logo .logo-ring {
 }
 
 .M {
-	color: #FFFFFF;
+	color: black;
 	display: inline;
 	border-bottom: .05em solid #e23203;
 }
@@ -130,31 +136,49 @@ m-v-logo .logo-ring {
 }
 
 h2 {
-	font-size: 3em;
+	font-size: 2.5em;
+	text-align: center;
+	text-shadow:none;
+	filter: drop-shadow(2px 4px 6px white);
+	color:black;
+
 }
 
 h3 {
 	font-size: 1.5em;
 	color: #8ebcd3;
+	filter: drop-shadow(2px 4px 6px white);
 }
 
 h4 {
 	font-size: 1.5em;
+	text-shadow: none;
+	filter: drop-shadow(2px 4px 6px white);
+	color:black;
 }
 
-.middle-content {
-	font-family: Noto Sans;
+h5 {
+	font-size: 1.5em;
 	text-align: center;
-	font-weight: bold;
+	text-shadow:none;
+	filter: drop-shadow(2px 4px 6px white);
+	color:black;
+}
+
+p {
+	text-align: center;
+	padding: 5px;
+	filter:none;
+	font-size: 15px;
+	color:black;
 }
 
 .bottom-content {
-	margin-top: 2em;
 	font-family: Noto Sans;
 	text-align: center;
 }
 
-.contact {
+.contact {`
 	text-align: center;
 	list-style-type: none;
 	font-size: 12px;
@@ -162,15 +186,107 @@ h4 {
 
 li {
 	display: inline;
-	padding: 1.5em;
-	color: #8ebcd3;
+	padding: 2.5em;
+	filter: drop-shadow(2px 4px 6px black);
+	color:black;
 }
 
 .fa {
-	color: #8ebcd3;
 	list-style-type: none;
 }
 
 a {
 	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: #ABABAB;
+}
+
+.email {
+  background:#ecf0f1;
+  border: #ccc 1px solid;
+  border-bottom: #ccc 2px solid;
+  padding: 8px;
+  width:250px;
+  color:#AAAAAA;
+  margin-top: 10px;
+  font-size: 1em;
+  border-radius:4px;
+}
+
+.password {
+  border-radius:4px;
+  background:#ecf0f1;
+  border: #ccc 1px solid;
+  padding: 8px;
+  width:250px;
+  font-size:1em;
+}
+
+.links {
+	margin-top: -0.5em;
+}
+
+.video1 {
+	-webkit-transition:all 1s;
+	border-radius: 25%;
+	width: 7.5rem;
+	filter: drop-shaow(2px 4px 6px black);
+}
+
+.video1:hover {
+	border-radius: 0%;
+	-webkit-transition: 1s;
+	-webkit-transform:scale(3);
+	z-index: 1;
+	position: relative;
+}
+
+.video2 {
+	-webkit-transition:all 1s;
+	border-radius: 50%;
+	width: 12rem;
+	overflow: hidden;
+	filter: drop-shadow(2px 4px 6px black);
+}
+
+.video2:hover {
+	border-radius: 0%;
+	-webkit-transition: 1s;
+	-webkit-transform:scale(2);
+	z-index: 1;
+	position: relative;
+}
+
+.video3 {
+	-webkit-transition:all 1s;
+	border-radius: 50%;
+	width: 12rem;
+	filter: drop-shadow(2px 4px 6px black);}
+
+.video3:hover {
+	border-radius: 0%;
+	-webkit-transition: 1s;
+	-webkit-transform:scale(2);
+	z-index: 1;
+	position: relative;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0.5em;
+ Only for demonstration */
+  overflow: hidden;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  overflow: hidden;
 }
